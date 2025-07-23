@@ -1,0 +1,504 @@
+/* Offline Access Styling */
+
+/* Offline Indicator */
+.offline-indicator {
+  position: fixed;
+  top: 5rem;
+  left: 1rem;
+  z-index: 2000;
+  background: linear-gradient(135deg, var(--warning-color), #f97316);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  transform: translateX(-120%);
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.offline-indicator.active {
+  transform: translateX(0);
+}
+
+.offline-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.offline-icon {
+  font-size: 1rem;
+  animation: pulse 2s infinite;
+}
+
+.offline-text {
+  font-weight: 600;
+}
+
+.offline-status {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+/* Offline Toggle Button */
+.offline-toggle {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offline-toggle:hover {
+  background: var(--accent-light);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Offline Modal */
+.offline-modal {
+  max-width: 600px;
+  width: 95%;
+}
+
+.offline-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.offline-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+}
+
+.offline-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.offline-stat-card .stat-icon {
+  font-size: 2rem;
+}
+
+.offline-stat-card .stat-info h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin-bottom: 0.25rem;
+}
+
+.offline-stat-card .stat-info p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.offline-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.offline-actions .btn {
+  flex: 1;
+  min-width: 150px;
+}
+
+.offline-info {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.offline-info h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.offline-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.offline-info li {
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.offline-info li:last-child {
+  border-bottom: none;
+}
+
+/* Connection Status Updates */
+.status-dot.offline {
+  background: var(--warning-color);
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Offline Data Indicators */
+.offline-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--warning-light);
+  color: var(--warning-color);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.offline-badge::before {
+  content: '📱';
+  font-size: 0.875rem;
+}
+
+/* Sync Progress Indicator */
+.sync-progress {
+  position: fixed;
+  top: 4rem;
+  right: 1rem;
+  z-index: 2000;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  box-shadow: var(--shadow-lg);
+  transform: translateX(120%);
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  min-width: 250px;
+}
+
+.sync-progress.active {
+  transform: translateX(0);
+}
+
+.sync-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.sync-icon {
+  font-size: 1.2rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.sync-text {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.sync-bar {
+  width: 100%;
+  height: 4px;
+  background: var(--bg-tertiary);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.sync-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--success-color));
+  border-radius: 2px;
+  transition: width 0.3s ease;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+.sync-status {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+/* Update Notification */
+.update-notification {
+  position: fixed;
+  top: 5rem;
+  right: 1rem;
+  z-index: 3000;
+  background: linear-gradient(135deg, var(--success-color), #059669);
+  color: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  animation: slideInRight 0.3s ease-out;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.update-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.update-icon {
+  font-size: 1.2rem;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.update-text {
+  font-weight: 500;
+  flex: 1;
+}
+
+.update-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.update-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.update-dismiss {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.25rem;
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.update-dismiss:hover {
+  opacity: 1;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Offline Queue Indicator */
+.queue-indicator {
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+  z-index: 2000;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 0.75rem 1rem;
+  box-shadow: var(--shadow-md);
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.queue-indicator.active {
+  display: flex;
+}
+
+.queue-count {
+  background: var(--accent-primary);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+/* Offline Storage Usage */
+.storage-usage {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.storage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.storage-title {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.storage-amount {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.storage-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.storage-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--success-color), var(--warning-color), var(--danger-color));
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.storage-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Responsive Offline Styles */
+@media (max-width: 768px) {
+  .offline-indicator {
+    left: 0.5rem;
+    right: 0.5rem;
+    width: auto;
+  }
+  
+  .offline-actions {
+    flex-direction: column;
+  }
+  
+  .offline-actions .btn {
+    width: 100%;
+  }
+  
+  .offline-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .sync-progress {
+    right: 0.5rem;
+    left: 0.5rem;
+    min-width: auto;
+  }
+  
+  .update-notification {
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+  
+  .queue-indicator {
+    left: 0.5rem;
+    right: 0.5rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .offline-content {
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+  }
+  
+  .update-content {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+  
+  .offline-modal {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+/* Icon utility for offline/notification icons */
+.offline-icon, .sync-icon, .update-icon, .queue-indicator .fa-solid {
+  font-size: 1.2em;
+  color: var(--warning-color);
+  margin-right: 0.5em;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+
+.offline-indicator.active, .update-notification {
+  animation: slideInRight 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.sync-progress-fill, .storage-fill {
+  animation: shimmer 2s linear infinite;
+}
+
+.status-dot.offline {
+  background: var(--danger-color);
+  animation: blink 1.2s infinite;
+}
+
+.queue-indicator .fa-solid {
+  color: var(--accent-primary);
+}
+
+.offline-indicator, .offline-modal, .offline-stat-card, .offline-info, .sync-progress, .update-notification, .queue-indicator, .storage-usage {
+  background: rgba(255,255,255,0.18) !important;
+  backdrop-filter: blur(18px) saturate(160%) !important;
+  border: 1.5px solid rgba(59,130,246,0.10) !important;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.10) !important;
+}
+[data-theme="dark"] .offline-indicator, [data-theme="dark"] .offline-modal, [data-theme="dark"] .offline-stat-card, [data-theme="dark"] .offline-info, [data-theme="dark"] .sync-progress, [data-theme="dark"] .update-notification, [data-theme="dark"] .queue-indicator, [data-theme="dark"] .storage-usage {
+  background: rgba(30,41,59,0.55) !important;
+  border: 1.5px solid rgba(59,130,246,0.18) !important;
+  box-shadow: 0 8px 32px 0 rgba(30,41,59,0.18) !important;
+}

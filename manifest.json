@@ -1,0 +1,23 @@
+{
+  "name": "Accent Neutralizer",
+  "short_name": "AccentNeutralizer",
+  "description": "AI-powered accent neutralization and communication platform for remote teams",
+  "version": "1.0.0",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["productivity", "communication", "business"],
+  
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}
