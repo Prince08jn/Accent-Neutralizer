@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accent Neutralizer - AI-Powered Communication Platform</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/advanced.css">
+  <link rel="stylesheet" href="styles/3d-effects.css">
+  <link rel="stylesheet" href="styles/offline-styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <meta name="theme-color" content="#3b82f6">
+  <meta name="description" content="AI-powered accent neutralization and communication platform for remote teams">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- AOS for scroll animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <div class="card fade-in-on-load">...</div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="nav-brand" href="#"><i class="fa-solid fa-mountain-sun brand-icon"></i> Ascent Neutralizer</a>
+      <div class="nav-menu">
+        <a class="nav-link active" href="#"><i class="fa-solid fa-house"></i> Home</a>
+        <a class="nav-link" href="#features"><i class="fa-solid fa-star"></i> Features</a>
+        <a class="nav-link" href="#team"><i class="fa-solid fa-users"></i> Team</a>
+        <a class="nav-link" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+ <!-- Home Section -->
+<section id="home" class="section active py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Text Content -->
+      <div class="col-lg-6">
+        <h1 class="hero-title hero-title-3d mb-4">Transform Communication with AI-Powered Accent Neutralization</h1>
+        <p class="hero-subtitle mb-4">Break down language barriers and enhance global collaboration with real-time accent neutralization, transcription, and translation powered by advanced AI.</p>
+
+        <div class="hero-actions d-flex flex-wrap gap-3 mb-4">
+          <button class="btn btn-primary btn-3d" onclick="showSection('transcribe')">
+            <span class="btn-icon">🎤</span> Start Transcribing
+          </button>
+          <button class="btn btn-secondary btn-3d" onclick="openModal('demoModal')">
+            <span class="btn-icon">▶️</span> Watch Demo
+          </button>
+        </div>
+
+        <div class="row text-white">
+          <div class="col-6 col-md-3 mb-3">
+            <div class="feature-badge"><span class="badge-icon">🌍</span> 50+ Languages</div>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <div class="feature-badge"><span class="badge-icon">⚡</span> Real-time</div>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <div class="feature-badge"><span class="badge-icon">🔒</span> Security</div>
+          </div>
+          <div class="col-6 col-md-3 mb-3">
+            <div class="feature-badge"><span class="badge-icon">📱</span> Mobile Ready</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual -->
+      <div class="col-lg-6">
+        <div class="hero-visual">
+          <div class="floating-cards">
+            <div class="floating-card floating-card-3d card p-3 shadow" style="--delay: 0s;">
+              <div class="card-icon">🎤</div>
+              <h5>Real-time Transcription</h5>
+              <p>Convert speech to text instantly with 97% accuracy</p>
+            </div>
+            <div class="floating-card floating-card-3d card p-3 shadow" style="--delay: 0.5s;">
+              <div class="card-icon">🌍</div>
+              <h5>Live Translation</h5>
+              <p>Translate conversations in real-time across 50+ languages</p>
+            </div>
+            <div class="floating-card floating-card-3d card p-3 shadow" style="--delay: 1s;">
+              <div class="card-icon">👥</div>
+              <h5>Team Collaboration</h5>
+              <p>Share transcripts and collaborate with your team seamlessly</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+      <!-- Stats Section -->
+      <div class="stats-section">
+        <div class="stats-container">
+          <div class="stat-item">
+            <div class="stat-number">97%</div>
+            <div class="stat-label">Accuracy Rate</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Languages</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10K+</div>
+            <div class="stat-label">Active Users</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">1M+</div>
+            <div class="stat-label">Hours Transcribed</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features Grid -->
+      <div class="features-grid">
+        <div class="feature-card feature-card-3d">
+          <div class="feature-icon">🎯</div>
+          <h3>Accent Neutralization</h3>
+          <p>Advanced AI algorithms neutralize accents while preserving meaning and context for clearer communication.</p>
+          <ul class="feature-list">
+            <li>Real-time processing</li>
+            <li>Context preservation</li>
+            <li>Multiple accent support</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card feature-card-3d">
+          <div class="feature-icon">👥</div>
+          <h3>Speaker Diarization</h3>
+          <p>Automatically identify and separate different speakers in meetings and conversations.</p>
+          <ul class="feature-list">
+            <li>Multi-speaker detection</li>
+            <li>Speaker labeling</li>
+            <li>Voice fingerprinting</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card feature-card-3d">
+          <div class="feature-icon">🔊</div>
+          <h3>Voice Commands</h3>
+          <p>Control the application hands-free with natural voice commands and shortcuts.</p>
+          <ul class="feature-list">
+            <li>Natural language control</li>
+            <li>Custom commands</li>
+            <li>Hands-free operation</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card feature-card-3d">
+          <div class="feature-icon">📊</div>
+          <h3>Advanced Analytics</h3>
+          <p>Gain insights with detailed analytics, word clouds, and sentiment analysis.</p>
+          <ul class="feature-list">
+            <li>Usage analytics</li>
+            <li>Sentiment tracking</li>
+            <li>Performance metrics</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card feature-card-3d">
+          <div class="feature-icon">🔗</div>
+          <h3>Integrations</h3>
+          <p>Seamlessly integrate with your favorite tools and platforms.</p>
+          <ul class="feature-list">
+            <li>Calendar integration</li>
+            <li>Slack & Teams bots</li>
+            <li>API access</li>
+          </ul>
+        </div>
+        
+        <div class="feature-card feature-card-3d">
+          <div class="feature-icon">♿</div>
+          <h3>Accessibility</h3>
+          <p>Designed for everyone with comprehensive accessibility features.</p>
+          <ul class="feature-list">
+            <li>Screen reader support</li>
+            <li>Keyboard navigation</li>
+            <li>High contrast mode</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- What Our Customers Say -->
+      <section class="testimonials-section">
+        <div class="section-header">
+          <h2>What Our Customers Say</h2>
+          <p>Trusted by teams worldwide to break down communication barriers</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"Accent Neutralizer has completely transformed our global team meetings. We can finally focus on the content instead of struggling to understand each other."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div class="author-info">
+                <h4>Sarah Martinez</h4>
+                <p>VP of Engineering, TechCorp</p>
+              </div>
+            </div>
+            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"The real-time translation feature is incredible. Our international clients love how seamlessly we can communicate now."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">JC</div>
+              <div class="author-info">
+                <h4>James Chen</h4>
+                <p>Sales Director, GlobalSoft</p>
+              </div>
+            </div>
+            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"As someone with a strong accent, this tool has boosted my confidence in presentations. The AI coaching is phenomenal."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">RP</div>
+              <div class="author-info">
+                <h4>Raj Patel</h4>
+                <p>Product Manager, InnovateLab</p>
+              </div>
+            </div>
+            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"The analytics insights help us understand our communication patterns better. It's like having a communication coach for the entire team."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">MJ</div>
+              <div class="author-info">
+                <h4>Maria Johnson</h4>
+                <p>HR Director, RemoteFirst</p>
+              </div>
+            </div>
+            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Simple Transparent Pricing -->
+      <section class="pricing-section">
+        <div class="section-header">
+          <h2>Simple, Transparent Pricing</h2>
+          <p>Choose the plan that fits your team's needs</p>
+        </div>
+        
+        <div class="pricing-toggle">
+          <span class="toggle-label">Monthly</span>
+          <div class="toggle-switch">
+            <input type="checkbox" id="pricingToggle">
+            <label for="pricingToggle" class="toggle-label"></label>
+          </div>
+          <span class="toggle-label">Annual <span class="discount-badge">Save 20%</span></span>
+        </div>
+        
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Starter</h3>
+              <p>Perfect for individuals and small teams</p>
+            </div>
+            <div class="pricing-price">
+              <span class="price-amount">$9</span>
+              <span class="price-period">/month</span>
+            </div>
+            <ul class="pricing-features">
+              <li>✓ Up to 10 hours of transcription</li>
+              <li>✓ Basic accent neutralization</li>
+              <li>✓ 5 supported languages</li>
+              <li>✓ Export to TXT/PDF</li>
+              <li>✓ Email support</li>
+            </ul>
+            <button class="btn btn-secondary btn-full">Get Started</button>
+          </div>
+          
+          <div class="pricing-card featured">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Professional</h3>
+              <p>Best for growing teams and businesses</p>
+            </div>
+            <div class="pricing-price">
+              <span class="price-amount">$29</span>
+              <span class="price-period">/month</span>
+            </div>
+            <ul class="pricing-features">
+              <li>✓ Unlimited transcription</li>
+              <li>✓ Advanced AI features</li>
+              <li>✓ 25+ languages</li>
+              <li>✓ Team collaboration</li>
+              <li>✓ Speaker diarization</li>
+              <li>✓ Custom vocabulary</li>
+              <li>✓ Priority support</li>
+            </ul>
+            <button class="btn btn-primary btn-full">Start Free Trial</button>
+          </div>
+          
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Enterprise</h3>
+              <p>For large organizations with custom needs</p>
+            </div>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+            <ul class="pricing-features">
+              <li>✓ Everything in Professional</li>
+              <li>✓ Custom integrations</li>
+              <li>✓ On-premise deployment</li>
+              <li>✓ Advanced analytics</li>
+              <li>✓ Dedicated support</li>
+              <li>✓ SLA guarantee</li>
+            </ul>
+            <button class="btn btn-secondary btn-full">Contact Sales</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seamless Integrations -->
+      <section class="integrations-section">
+        <div class="section-header">
+          <h2>Seamless Integrations</h2>
+          <p>Connect with your favorite tools and platforms</p>
+        </div>
+        
+        <div class="integrations-grid">
+          <div class="integration-category">
+            <h3>Video Conferencing</h3>
+            <div class="integration-logos">
+              <div class="integration-logo">
+                <div class="logo-icon">🎥</div>
+                <div class="logo-name">Zoom</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">📹</div>
+                <div class="logo-name">Google Meet</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">👥</div>
+                <div class="logo-name">Microsoft Teams</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">📺</div>
+                <div class="logo-name">WebEx</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="integration-category">
+            <h3>Communication</h3>
+            <div class="integration-logos">
+              <div class="integration-logo">
+                <div class="logo-icon">💬</div>
+                <div class="logo-name">Slack</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">💼</div>
+                <div class="logo-name">Discord</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">📧</div>
+                <div class="logo-name">Outlook</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">📮</div>
+                <div class="logo-name">Gmail</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="integration-category">
+            <h3>Productivity</h3>
+            <div class="integration-logos">
+              <div class="integration-logo">
+                <div class="logo-icon">📅</div>
+                <div class="logo-name">Google Calendar</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">📋</div>
+                <div class="logo-name">Notion</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">📊</div>
+                <div class="logo-name">Trello</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">📈</div>
+                <div class="logo-name">Asana</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="integration-category">
+            <h3>Storage & Cloud</h3>
+            <div class="integration-logos">
+              <div class="integration-logo">
+                <div class="logo-icon">💾</div>
+                <div class="logo-name">Google Drive</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">📦</div>
+                <div class="logo-name">Dropbox</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">☁️</div>
+                <div class="logo-name">OneDrive</div>
+              </div>
+              <div class="integration-logo">
+                <div class="logo-icon">🗂️</div>
+                <div class="logo-name">Box</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Frequently Asked Questions -->
+      <section class="faq-section">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about Accent Neutralizer</p>
+        </div>
+        
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">How accurate is the accent neutralization?</div>
+            <div class="faq-answer">Our AI achieves 97%+ accuracy in accent neutralization across 25+ languages. The system continuously learns and improves with usage.</div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Can I use it for live meetings?</div>
+            <div class="faq-answer">Yes! Accent Neutralizer works in real-time for live meetings, video calls, and presentations with minimal latency.</div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Is my data secure and private?</div>
+            <div class="faq-answer">Absolutely. We use end-to-end encryption, and you can choose to process data locally. We never store or share your conversations without permission.</div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">What languages are supported?</div>
+            <div class="faq-answer">We support 25+ languages including English, Spanish, French, German, Chinese, Japanese, Hindi, Arabic, and many more.</div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Can I integrate it with my existing tools?</div>
+            <div class="faq-answer">Yes! We offer integrations with Zoom, Teams, Slack, Google Calendar, and many other popular business tools.</div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Do you offer a free trial?</div>
+            <div class="faq-answer">Yes, we offer a 14-day free trial with full access to Professional features. No credit card required to start.</div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">How does team collaboration work?</div>
+            <div class="faq-answer">Teams can join shared transcription rooms, add comments, edit transcripts collaboratively, and share insights in real-time.</div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">Can I export transcripts?</div>
+            <div class="faq-answer">Yes, you can export transcripts in multiple formats including PDF, DOCX, TXT, and JSON. You can also share them via email or direct links.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ready to Transform Your Team -->
+      <section class="cta-section">
+        <div class="cta-content">
+          <h2>Ready to Transform Your Team Communication?</h2>
+          <p>Join thousands of teams already using Accent Neutralizer to break down language barriers and improve collaboration.</p>
+          
+          <div class="cta-actions">
+            <button class="btn btn-large" style="background: white; color: var(--accent-primary);">Start Free Trial</button>
+            <button class="btn btn-large" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3);">Schedule Demo</button>
+          </div>
+          
+          <div class="cta-note">
+            No credit card required • 14-day free trial • Cancel anytime
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Transcribe Section -->
+    <section id="transcribe" class="section">
+      <div class="section-header">
+        <h2>Real-time Transcription Studio</h2>
+        <p>Convert speech to text with AI-powered accent neutralization and speaker identification</p>
+      </div>
+      
+      <div class="studio-layout">
+        <div class="studio-controls">
+          <div class="control-panel card-3d">
+            <button class="mic-button mic-button-3d" id="micButton">
+              <span class="mic-icon">🎤</span>
+              <span class="mic-text">Start Speaking</span>
+            </button>
+            
+            <div class="status-indicator" id="statusIndicator">
+              <div class="status-dot"></div>
+              <span class="status-text">Ready to listen</span>
+            </div>
+            
+            <div class="audio-visualizer">
+              <div class="visualizer-bar"></div>
+              <div class="visualizer-bar"></div>
+              <div class="visualizer-bar"></div>
+              <div class="visualizer-bar"></div>
+              <div class="visualizer-bar"></div>
+              <div class="visualizer-bar"></div>
+              <div class="visualizer-bar"></div>
+              <div class="visualizer-bar"></div>
+            </div>
+            
+            <div class="transcription-stats">
+              <div class="stat">
+                <span>⏱️</span>
+                <span id="recordingTime">00:00</span>
+              </div>
+              <div class="stat">
+                <span>📝</span>
+                <span id="wordCount">0 words</span>
+              </div>
+              <div class="stat">
+                <span>🎯</span>
+                <span id="confidenceScore">0%</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="advanced-settings card-3d">
+            <h4>Audio Settings</h4>
+            <div class="setting-group">
+              <label for="confidenceSlider">Confidence Threshold</label>
+              <input type="range" id="confidenceSlider" class="slider slider-3d" min="0" max="1" step="0.1" value="0.8">
+              <span class="slider-value">80%</span>
+            </div>
+            
+            <div class="setting-group">
+              <label>
+                <input type="checkbox" id="noiseSuppression" checked> Noise Suppression
+              </label>
+            </div>
+            
+            <div class="setting-group">
+              <label>
+                <input type="checkbox" id="speakerDiarization" checked> Speaker Detection
+              </label>
+            </div>
+          </div>
+          
+          <div class="ai-insights card-3d">
+            <div class="insights-header">
+              <h4>AI Insights</h4>
+              <button class="btn btn-sm" id="refreshInsights">🔄</button>
+            </div>
+            <div class="insights-content">
+              <div class="insight-item">
+                <span class="insight-label">Action Items</span>
+                <span class="insight-value" id="actionItems">0</span>
+              </div>
+              <div class="insight-item">
+                <span class="insight-label">Key Topics</span>
+                <span class="insight-value" id="keyTopics">None</span>
+              </div>
+              <div class="insight-item">
+                <span class="insight-label">Sentiment</span>
+                <span class="insight-value" id="sentiment">Neutral</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="transcription-container transcription-container-3d">
+          <div class="transcription-header">
+            <h3>Live Transcription</h3>
+            <div class="transcription-actions">
+              <button class="btn btn-sm" id="clearButton">🗑️ Clear</button>
+              <button class="btn btn-sm" id="exportButton">📤 Export</button>
+              <button class="btn btn-sm" id="shareButton">📧 Share</button>
+              <button class="btn btn-sm" id="summaryButton">🤖 AI Summary</button>
+            </div>
+          </div>
+          
+          <div class="transcription-area" id="transcriptionArea">
+            <div class="welcome-message">
+              <div class="welcome-icon">🎤</div>
+              <h3>Ready to Transcribe</h3>
+              <p>Click "Start Speaking" to begin real-time transcription. Your speech will be converted to clear, neutral text with speaker identification.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Translation Section -->
+    <section id="translate" class="section">
+      <div class="section-header">
+        <h2>Real-time Translation</h2>
+        <p>Break language barriers with instant, context-aware translation</p>
+      </div>
+      
+      <div class="translation-layout">
+        <div class="translation-controls card-3d">
+          <div class="language-selector">
+            <div class="language-input">
+              <label for="sourceLanguage">From</label>
+              <select id="sourceLanguage" class="select-input form-input-3d">
+                <option value="auto">Auto-detect</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="zh">Chinese</option>
+                <option value="ja">Japanese</option>
+                <option value="ar">Arabic</option>
+              </select>
+            </div>
+            
+            <button class="language-swap" id="languageSwap">⇄</button>
+            
+            <div class="language-input">
+              <label for="targetLanguage">To</label>
+              <select id="targetLanguage" class="select-input form-input-3d">
+                <option value="es">Spanish</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="zh">Chinese</option>
+                <option value="ja">Japanese</option>
+                <option value="ar">Arabic</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="translation-options">
+            <div class="option-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="parallelDisplay" checked>
+                Parallel Display
+              </label>
+            </div>
+            <div class="option-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="contextualTranslation" checked>
+                Contextual Translation
+              </label>
+            </div>
+            <div class="option-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="culturalAdaptation">
+                Cultural Adaptation
+              </label>
+            </div>
+          </div>
+          
+          <button class="btn btn-primary btn-full btn-3d" id="startTranslation">
+            <span class="btn-icon">🌍</span>
+            Start Translation
+          </button>
+        </div>
+        
+        <div class="translation-display">
+          <div class="translation-panel card-3d">
+            <div class="panel-header">
+              <h4>Original</h4>
+              <span class="language-badge" id="detectedLanguage">Auto-detect</span>
+              <button class="btn btn-sm" id="playOriginal">🔊</button>
+            </div>
+            <div class="translation-content" id="originalContent">
+              <div class="placeholder-message">
+                <div class="placeholder-icon">🎤</div>
+                <p>Start speaking to see real-time transcription</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="translation-panel card-3d">
+            <div class="panel-header">
+              <h4>Translation</h4>
+              <span class="language-badge" id="targetLanguageBadge">Spanish</span>
+              <button class="btn btn-sm" id="playTranslation">🔊</button>
+            </div>
+            <div class="translation-content" id="translatedContent">
+              <div class="placeholder-message">
+                <div class="placeholder-icon">🌍</div>
+                <p>Translations will appear here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tts-controls card-3d">
+          <h4>Text-to-Speech Settings</h4>
+          <div class="tts-options">
+            <div class="tts-group">
+              <label for="voiceSelect">Voice</label>
+              <select id="voiceSelect" class="select-input form-input-3d">
+                <option value="neutral">Neutral</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="tts-group">
+              <label for="speedSlider">Speed</label>
+              <input type="range" id="speedSlider" class="slider slider-3d" min="0.5" max="2" step="0.1" value="1">
+              <span class="slider-value">1x</span>
+            </div>
+            <div class="tts-actions">
+              <button class="btn btn-sm btn-3d" id="playOriginalBtn">Play Original</button>
+              <button class="btn btn-sm btn-3d" id="playTranslationBtn">Play Translation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meetings Section -->
+    <section id="meetings" class="section">
+      <div class="section-header">
+        <h2>Meeting Management</h2>
+        <p>Schedule, join, and manage your meetings with integrated transcription</p>
+      </div>
+      
+      <div class="meetings-layout">
+        <div class="meetings-sidebar card-3d">
+          <button class="btn btn-primary btn-full btn-3d" id="scheduleMeetingBtn">
+            <span class="btn-icon">📅</span>
+            Schedule Meeting
+          </button>
+          
+          <div class="meeting-filters">
+            <h4>Filter Meetings</h4>
+            <div class="filter-group">
+              <label for="statusFilter">Status</label>
+              <select id="statusFilter" class="select-input form-input-3d">
+                <option value="all">All Meetings</option>
+                <option value="upcoming">Upcoming</option>
+                <option value="live">Live</option>
+                <option value="completed">Completed</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="teamFilter">Team</label>
+              <select id="teamFilter" class="select-input form-input-3d">
+                <option value="all">All Teams</option>
+                <option value="engineering">Engineering</option>
+                <option value="marketing">Marketing</option>
+                <option value="sales">Sales</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div class="meetings-content card-3d">
+          <div class="meetings-grid" id="meetingsGrid">
+            <!-- Meetings will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section id="collaboration" class="section">
+      <div class="section-header">
+        <h2>Team Collaboration</h2>
+        <p>Real-time shared transcription and team communication</p>
+      </div>
+      
+      <div class="collaboration-layout">
+        <div class="collaboration-sidebar card-3d">
+          <div class="room-controls">
+            <button class="btn btn-primary btn-full btn-3d" id="createRoomBtn">
+              <span class="btn-icon">➕</span>
+              Create Room
+            </button>
+            <button class="btn btn-secondary btn-full btn-3d" id="joinRoomBtn">
+              <span class="btn-icon">🚪</span>
+              Join Room
+            </button>
+          </div>
+          
+          <div class="current-room" id="currentRoomInfo">
+            <h4>Current Room</h4>
+            <div class="room-details">
+              <p><strong>Name:</strong> <span id="currentRoomName">None</span></p>
+              <p><strong>ID:</strong> <span id="currentRoomId">-</span></p>
+              <p><strong>Participants:</strong> <span id="participantCount">0</span></p>
+            </div>
+          </div>
+          
+          <div class="participants-list">
+            <h4>Participants</h4>
+            <div id="participantsList">
+              <!-- Participants will be populated by JavaScript -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="collaboration-main">
+          <div class="shared-transcript card-3d">
+            <div class="transcript-header">
+              <h4>Shared Transcript</h4>
+              <div class="transcript-actions">
+                <button class="btn btn-sm btn-3d" id="shareTranscriptBtn">📤 Share</button>
+                <button class="btn btn-sm btn-3d">💾 Save</button>
+              </div>
+            </div>
+            <div class="transcript-content" id="collaborationTranscript">
+              <div class="placeholder-message">
+                <div class="placeholder-icon">👥</div>
+                <p>Join a room to start collaborative transcription</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="team-chat card-3d">
+            <div class="chat-header">
+              <h4>Team Chat</h4>
+            </div>
+            <div class="chat-messages" id="collaborationChat">
+              <!-- Chat messages will be populated by JavaScript -->
+            </div>
+            <form class="chat-form" id="chatForm">
+              <input type="text" name="message" placeholder="Type a message..." class="form-input form-input-3d" required>
+              <button type="submit" class="btn btn-primary btn-3d">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="analytics" class="section">
+      <div class="section-header">
+        <h2>Advanced Analytics</h2>
+        <p>Gain insights from your communication patterns and team performance</p>
+      </div>
+      
+      <div class="analytics-dashboard">
+        <div class="stats-grid">
+          <div class="stat-card stat-card-3d">
+            <div class="stat-icon">📝</div>
+            <div class="stat-content">
+              <h3>2,847</h3>
+              <p>Total Transcriptions</p>
+              <div class="stat-change positive">+12% this month</div>
+            </div>
+          </div>
+          
+          <div class="stat-card stat-card-3d">
+            <div class="stat-icon">⏱️</div>
+            <div class="stat-content">
+              <h3>156h</h3>
+              <p>Time Saved</p>
+              <div class="stat-change positive">+8% this month</div>
+            </div>
+          </div>
+          
+          <div class="stat-card stat-card-3d">
+            <div class="stat-icon">🎯</div>
+            <div class="stat-content">
+              <h3>97.3%</h3>
+              <p>Accuracy Rate</p>
+              <div class="stat-change neutral">Stable</div>
+            </div>
+          </div>
+          
+          <div class="stat-card stat-card-3d">
+            <div class="stat-icon">👥</div>
+            <div class="stat-content">
+              <h3>24</h3>
+              <p>Active Members</p>
+              <div class="stat-change positive">+3 this week</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="charts-grid">
+          <div class="chart-card card-3d">
+            <div class="chart-header">
+              <h4>Usage Over Time</h4>
+              <div class="chart-actions">
+                <button class="btn btn-sm btn-3d" id="generateWordCloudBtn">📊 Word Cloud</button>
+                <button class="btn btn-sm btn-3d" id="exportAnalyticsBtn">📤 Export</button>
+              </div>
+            </div>
+            <div class="chart-placeholder">
+              <div class="chart-bars">
+                <div class="chart-bar" style="height: 60%;"></div>
+                <div class="chart-bar" style="height: 80%;"></div>
+                <div class="chart-bar" style="height: 45%;"></div>
+                <div class="chart-bar" style="height: 90%;"></div>
+                <div class="chart-bar" style="height: 70%;"></div>
+                <div class="chart-bar" style="height: 85%;"></div>
+                <div class="chart-bar" style="height: 95%;"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="chart-card card-3d">
+            <div class="chart-header">
+              <h4>Language Distribution</h4>
+              <div class="chart-actions">
+                <button class="btn btn-sm btn-3d" id="speakerAnalyticsBtn">👥 Speakers</button>
+                <button class="btn btn-sm btn-3d" id="sentimentAnalysisBtn">😊 Sentiment</button>
+              </div>
+            </div>
+            <div class="language-stats">
+              <div class="language-item">
+                <span class="language-name">English</span>
+                <div class="language-bar">
+                  <div class="language-progress" style="width: 65%;"></div>
+                </div>
+                <span class="language-percent">65%</span>
+              </div>
+              <div class="language-item">
+                <span class="language-name">Spanish</span>
+                <div class="language-bar">
+                  <div class="language-progress" style="width: 20%;"></div>
+                </div>
+                <span class="language-percent">20%</span>
+              </div>
+              <div class="language-item">
+                <span class="language-name">French</span>
+                <div class="language-bar">
+                  <div class="language-progress" style="width: 10%;"></div>
+                </div>
+                <span class="language-percent">10%</span>
+              </div>
+              <div class="language-item">
+                <span class="language-name">Other</span>
+                <div class="language-bar">
+                  <div class="language-progress" style="width: 5%;"></div>
+                </div>
+                <span class="language-percent">5%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="analytics-tools">
+          <div class="tool-card card-3d">
+            <h4>Word Cloud Generator</h4>
+            <div id="wordCloudContainer">
+              <div class="placeholder-message">
+                <div class="placeholder-icon">☁️</div>
+                <p>Generate a word cloud to visualize frequently used terms</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tool-card card-3d">
+            <h4>Talk Time Analysis</h4>
+            <div class="talk-time-chart">
+              <div class="speaker-item">
+                <div class="speaker-info">
+                  <div class="speaker-avatar">AC</div>
+                  <span class="speaker-name">Alex Chen</span>
+                </div>
+                <div class="talk-bar">
+                  <div class="talk-progress" style="width: 35%;"></div>
+                </div>
+                <span class="talk-time">12:30</span>
+              </div>
+              <div class="speaker-item">
+                <div class="speaker-info">
+                  <div class="speaker-avatar">SJ</div>
+                  <span class="speaker-name">Sarah Johnson</span>
+                </div>
+                <div class="talk-bar">
+                  <div class="talk-progress" style="width: 28%;"></div>
+                </div>
+                <span class="talk-time">9:45</span>
+              </div>
+              <div class="speaker-item">
+                <div class="speaker-info">
+                  <div class="speaker-avatar">MR</div>
+                  <span class="speaker-name">Mike Rodriguez</span>
+                </div>
+                <div class="talk-bar">
+                  <div class="talk-progress" style="width: 22%;"></div>
+                </div>
+                <span class="talk-time">7:20</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+      <div class="section-header">
+        <h2>Team Management</h2>
+        <p>Manage your team members and collaboration settings</p>
+      </div>
+      
+      <div class="team-layout">
+        <div class="team-actions">
+          <div class="search-box">
+            <input type="text" class="search-input form-input form-input-3d" placeholder="Search team members...">
+            <span class="search-icon">🔍</span>
+          </div>
+          <button class="btn btn-primary btn-3d" id="inviteTeamBtn">
+            <span class="btn-icon">➕</span>
+            Invite Member
+          </button>
+        </div>
+        
+        <div class="team-grid" id="teamGrid">
+          <!-- Team members will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Settings Section -->
+    <section id="settings" class="section">
+      <div class="section-header">
+        <h2>Settings & Preferences</h2>
+        <p>Customize your experience and manage integrations</p>
+      </div>
+      
+      <div class="settings-layout">
+        <div class="settings-nav card-3d">
+          <button class="settings-tab active" data-tab="general">General</button>
+          <button class="settings-tab" data-tab="audio">Audio</button>
+          <button class="settings-tab" data-tab="privacy">Privacy</button>
+          <button class="settings-tab" data-tab="accessibility">Accessibility</button>
+          <button class="settings-tab" data-tab="integrations">Integrations</button>
+          <button class="settings-tab" data-tab="voice-commands">Voice Commands</button>
+          <button class="settings-tab" data-tab="vocabulary">Custom Vocabulary</button>
+          <button class="settings-tab" data-tab="notifications">Notifications</button>
+          <button class="settings-tab" data-tab="api">API Access</button>
+          <button class="settings-tab" data-tab="billing">Billing</button>
+        </div>
+        
+        <div class="settings-content card-3d">
+          <!-- General Settings -->
+          <div id="general" class="settings-panel active">
+            <h3>General Settings</h3>
+            
+            <div class="setting-item">
+              <label>Default Language</label>
+              <select class="select-input form-input-3d">
+                <option value="auto">Auto-detect</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+              </select>
+            </div>
+            
+            <div class="setting-item">
+              <label>Theme</label>
+              <div class="theme-selector">
+                <div class="theme-option active">
+                  <div class="theme-preview light"></div>
+                  <span>Light</span>
+                </div>
+                <div class="theme-option">
+                  <div class="theme-preview dark"></div>
+                  <span>Dark</span>
+                </div>
+                <div class="theme-option">
+                  <div class="theme-preview contrast"></div>
+                  <span>High Contrast</span>
+                </div>
+                <div class="theme-option">
+                  <div class="theme-preview auto"></div>
+                  <span>Auto</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" checked>
+                Enable keyboard shortcuts
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" checked>
+                Show notifications
+              </label>
+            </div>
+          </div>
+          
+          <!-- Audio Settings -->
+          <div id="audio" class="settings-panel">
+            <h3>Audio Settings</h3>
+            
+            <div class="setting-item">
+              <label for="microphoneSelect">Microphone</label>
+              <select id="microphoneSelect" class="select-input form-input-3d">
+                <option>Default Microphone</option>
+              </select>
+              <button class="btn btn-sm btn-3d" onclick="settingsManager.testMicrophone()">Test</button>
+            </div>
+            
+            <div class="setting-item">
+              <label>Audio Quality</label>
+              <select class="select-input form-input-3d">
+                <option value="low">Low (faster processing)</option>
+                <option value="medium" selected>Medium (balanced)</option>
+                <option value="high">High (best quality)</option>
+              </select>
+            </div>
+            
+            <div class="setting-item">
+              <label for="noiseSuppressionSlider">Noise Suppression</label>
+              <input type="range" id="noiseSuppressionSlider" class="slider slider-3d" min="0" max="100" value="70">
+              <span class="slider-value">70%</span>
+            </div>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" checked>
+                Echo cancellation
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" checked>
+                Auto gain control
+              </label>
+            </div>
+          </div>
+          
+          <!-- Privacy Settings -->
+          <div id="privacy" class="settings-panel">
+            <h3>Privacy & Security</h3>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" checked>
+                End-to-end encryption
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox">
+                Store data locally only
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label for="dataRetentionSlider">Data retention (days)</label>
+              <input type="range" id="dataRetentionSlider" class="slider slider-3d" min="1" max="365" value="90">
+              <span class="slider-value">90 days</span>
+            </div>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" checked>
+                Allow analytics collection
+              </label>
+            </div>
+          </div>
+          
+          <!-- Accessibility Settings -->
+          <div id="accessibility" class="settings-panel">
+            <h3>Accessibility</h3>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" id="highContrastToggle">
+                High contrast mode
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label for="fontSizeSelect">Font Size</label>
+              <select id="fontSizeSelect" class="select-input form-input-3d">
+                <option value="small">Small</option>
+                <option value="normal" selected>Normal</option>
+                <option value="large">Large</option>
+                <option value="extra-large">Extra Large</option>
+              </select>
+            </div>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" id="screenReaderToggle">
+                Screen reader mode
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" id="keyboardNavToggle" checked>
+                Enhanced keyboard navigation
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" id="reducedMotionToggle">
+                Reduce motion
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" id="focusIndicatorsToggle" checked>
+                Enhanced focus indicators
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <button class="btn btn-secondary btn-3d" id="testNotificationBtn">Test Accessibility</button>
+            </div>
+          </div>
+          
+          <!-- Integrations Settings -->
+          <div id="integrations" class="settings-panel">
+            <h3>Integrations</h3>
+            
+            <div class="integrations-container" id="integrationsContainer">
+              <!-- Integrations will be populated by JavaScript -->
+            </div>
+            
+            <div class="integration-tools">
+              <h4>Developer Tools</h4>
+              <div class="tool-actions">
+                <button class="btn btn-secondary btn-3d" id="setupWebhookBtn">Setup Webhook</button>
+                <button class="btn btn-secondary btn-3d" id="generateApiKeyBtn">Generate API Key</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Voice Commands Settings -->
+          <div id="voice-commands" class="settings-panel">
+            <h3>Voice Commands</h3>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" id="enableVoiceToggle" checked>
+                Enable voice commands
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label for="wakeWordInput">Wake Word</label>
+              <input type="text" id="wakeWordInput" class="form-input form-input-3d" value="hey accent" placeholder="Enter wake word">
+            </div>
+            
+            <div class="setting-item">
+              <label for="voiceConfidenceSlider">Recognition Confidence</label>
+              <input type="range" id="voiceConfidenceSlider" class="slider slider-3d" min="0" max="1" step="0.1" value="0.8">
+              <span class="slider-value" id="voiceConfidenceValue">80%</span>
+            </div>
+            
+            <div class="setting-item">
+              <div class="voice-status" id="voiceStatus">Voice commands enabled</div>
+              <div class="voice-display" id="voiceDisplay">Listening...</div>
+            </div>
+            
+            <div class="setting-item">
+              <button class="btn btn-secondary btn-3d" id="testVoiceBtn">Test Voice Command</button>
+            </div>
+            
+            <div class="commands-list">
+              <h4>Available Commands</h4>
+              <div id="commandsList">
+                <!-- Commands will be populated by JavaScript -->
+              </div>
+            </div>
+            
+            <div class="add-command">
+              <h4>Add Custom Command</h4>
+              <form id="addCommandForm">
+                <div class="form-group">
+                  <label>Command Phrase</label>
+                  <input type="text" name="phrase" class="form-input form-input-3d" placeholder="e.g., open settings" required>
+                </div>
+                <div class="form-group">
+                  <label>Action Type</label>
+                  <select name="actionType" class="select-input form-input-3d" required>
+                    <option value="navigate">Navigate to Section</option>
+                    <option value="speak">Speak Text</option>
+                    <option value="notification">Show Notification</option>
+                    <option value="javascript">Custom JavaScript</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Action Value</label>
+                  <input type="text" name="actionValue" class="form-input form-input-3d" placeholder="e.g., settings" required>
+                </div>
+                <div class="form-group">
+                  <label>Description (optional)</label>
+                  <input type="text" name="description" class="form-input form-input-3d" placeholder="Brief description">
+                </div>
+                <button type="submit" class="btn btn-primary btn-3d">Add Command</button>
+              </form>
+            </div>
+          </div>
+          
+          <!-- Custom Vocabulary Settings -->
+          <div id="vocabulary" class="settings-panel">
+            <h3>Custom Vocabulary</h3>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" id="enableVocabToggle" checked>
+                Enable custom vocabulary
+              </label>
+            </div>
+            
+            <div class="vocabulary-stats">
+              <div class="vocab-stat">
+                <span class="stat-label">Total Words:</span>
+                <span class="stat-value" id="totalWords">0</span>
+              </div>
+              <div class="vocab-stat">
+                <span class="stat-label">Categories:</span>
+                <span class="stat-value" id="categoriesCount">0</span>
+              </div>
+              <div class="vocab-stat">
+                <span class="stat-label">Most Used:</span>
+                <span class="stat-value" id="mostUsedCategory">None</span>
+              </div>
+            </div>
+            
+            <div class="vocabulary-controls">
+              <div class="vocab-actions">
+                <button class="btn btn-secondary btn-3d" id="importVocabBtn">📥 Import</button>
+                <input type="file" id="importVocabFile" accept=".json,.csv,.txt" style="display: none;">
+                <button class="btn btn-secondary btn-3d" id="exportVocabBtn">📤 Export</button>
+              </div>
+              
+              <div class="vocab-filters">
+                <select id="categoryFilter" class="select-input form-input-3d">
+                  <option value="all">All Categories</option>
+                </select>
+                <input type="text" id="searchWords" class="form-input form-input-3d" placeholder="Search words...">
+              </div>
+            </div>
+            
+            <div class="add-word-form">
+              <h4>Add Custom Word</h4>
+              <form id="addWordForm">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Word</label>
+                    <input type="text" id="wordInput" name="word" class="form-input form-input-3d" placeholder="Enter word" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Pronunciation (optional)</label>
+                    <input type="text" id="pronunciationInput" name="pronunciation" class="form-input form-input-3d" placeholder="Phonetic spelling">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Category</label>
+                    <select id="categorySelect" name="category" class="select-input form-input-3d">
+                      <option value="general">General</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Definition (optional)</label>
+                    <input type="text" id="definitionInput" name="definition" class="form-input form-input-3d" placeholder="Brief definition">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Alternative spellings (comma-separated)</label>
+                  <input type="text" id="alternativesInput" name="alternatives" class="form-input form-input-3d" placeholder="alt1, alt2, alt3">
+                </div>
+                <button type="submit" class="btn btn-primary btn-3d">Add Word</button>
+              </form>
+            </div>
+            
+            <div class="vocabulary-list" id="vocabularyList">
+              <!-- Vocabulary items will be populated by JavaScript -->
+            </div>
+          </div>
+          
+          <!-- Notifications Settings -->
+          <div id="notifications" class="settings-panel">
+            <h3>Notifications</h3>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" id="browserNotificationsToggle" checked>
+                Browser notifications
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label class="checkbox-label">
+                <input type="checkbox" id="emailNotificationsToggle">
+                Email notifications
+              </label>
+            </div>
+            
+            <div class="notification-types">
+              <h4>Notification Types</h4>
+              <div id="browserNotificationTypes">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="notification-type-toggle" value="meeting-reminder" checked>
+                  Meeting reminders
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="notification-type-toggle" value="transcript-ready" checked>
+                  Transcript completed
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="notification-type-toggle" value="speaker-identified" checked>
+                  Speaker identified
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="notification-type-toggle" value="translation-complete">
+                  Translation completed
+                </label>
+              </div>
+            </div>
+            
+            <div class="setting-item">
+              <button class="btn btn-secondary btn-3d" id="testNotificationBtn">Test Notification</button>
+            </div>
+          </div>
+          
+          <!-- API Access Settings -->
+          <div id="api" class="settings-panel">
+            <h3>API Access</h3>
+            
+            <div class="api-info">
+              <p>Use our API to integrate accent neutralization and transcription into your applications.</p>
+            </div>
+            
+            <div class="api-keys">
+              <h4>API Keys</h4>
+              <div class="api-key-item">
+                <span class="key-name">Production Key</span>
+                <code class="api-key">ak_prod_••••••••••••••••</code>
+                <button class="btn btn-sm btn-3d">Regenerate</button>
+              </div>
+              <div class="api-key-item">
+                <span class="key-name">Development Key</span>
+                <code class="api-key">ak_dev_••••••••••••••••</code>
+                <button class="btn btn-sm btn-3d">Regenerate</button>
+              </div>
+            </div>
+            
+            <div class="api-usage">
+              <h4>Usage Statistics</h4>
+              <div class="usage-stats">
+                <div class="usage-item">
+                  <span class="usage-label">API Calls This Month</span>
+                  <div class="usage-bar">
+                    <div class="usage-progress" style="width: 65%;"></div>
+                  </div>
+                  <span class="usage-value">6,500 / 10,000</span>
+                </div>
+                <div class="usage-item">
+                  <span class="usage-label">Transcription Minutes</span>
+                  <div class="usage-bar">
+                    <div class="usage-progress" style="width: 45%;"></div>
+                  </div>
+                  <span class="usage-value">450 / 1,000</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="api-docs">
+              <h4>Documentation</h4>
+              <div class="doc-links">
+                <a href="#" class="btn btn-secondary btn-3d">📖 API Documentation</a>
+                <a href="#" class="btn btn-secondary btn-3d">🔧 SDK Downloads</a>
+                <a href="#" class="btn btn-secondary btn-3d">💡 Code Examples</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Billing Settings -->
+          <div id="billing" class="settings-panel">
+            <h3>Billing & Subscription</h3>
+            
+            <div class="billing-info">
+              <div class="current-plan card">
+                <h4>Professional Plan</h4>
+                <p>$29/month • Billed monthly</p>
+                <div class="plan-features">
+                  <span>✓ Unlimited transcriptions</span>
+                  <span>✓ 50+ languages</span>
+                  <span>✓ Team collaboration</span>
+                  <span>✓ Advanced analytics</span>
+                </div>
+              </div>
+              
+              <div class="usage-stats">
+                <h4>Current Usage</h4>
+                <div class="usage-item">
+                  <span>Transcription minutes</span>
+                  <span>1,247 / Unlimited</span>
+                </div>
+                <div class="usage-item">
+                  <span>Team members</span>
+                  <span>8 / 25</span>
+                </div>
+                <div class="usage-item">
+                  <span>Storage used</span>
+                  <span>2.3 GB / 100 GB</span>
+                </div>
+              </div>
+              
+              <div class="billing-actions">
+                <button class="btn btn-primary btn-3d">Upgrade Plan</button>
+                <button class="btn btn-secondary btn-3d">View Invoices</button>
+                <button class="btn btn-secondary btn-3d">Update Payment</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+  
+  <!-- Authentication Modal -->
+  <div id="authModal" class="modal modal-3d">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Sign In to Your Account</h3>
+        <button class="modal-close" onclick="closeModal('authModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-tab="login">Sign In</button>
+          <button class="auth-tab" data-tab="signup">Sign Up</button>
+        </div>
+        
+        <form id="loginForm" class="auth-form active">
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" name="email" class="form-input form-input-3d" value="demo@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" name="password" class="form-input form-input-3d" value="demo123" required>
+          </div>
+          <button type="submit" id="loginBtn" class="btn btn-primary btn-full btn-3d">Sign In</button>
+        </form>
+        
+        <form id="signupForm" class="auth-form">
+          <div class="form-group">
+            <label for="signupName">Full Name</label>
+            <input type="text" id="signupName" name="name" class="form-input form-input-3d" required>
+          </div>
+          <div class="form-group">
+            <label for="signupEmail">Email</label>
+            <input type="email" id="signupEmail" name="email" class="form-input form-input-3d" required>
+          </div>
+          <div class="form-group">
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" name="password" class="form-input form-input-3d" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" class="form-input form-input-3d" required>
+          </div>
+          <button type="submit" id="signupBtn" class="btn btn-primary btn-full btn-3d">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Schedule Meeting Modal -->
+  <div id="scheduleMeetingModal" class="modal modal-3d">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Schedule Meeting</h3>
+        <button class="modal-close" onclick="closeModal('scheduleMeetingModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="scheduleMeetingForm">
+          <div class="form-group">
+            <label for="meetingTitle">Meeting Title</label>
+            <input type="text" id="meetingTitle" name="title" class="form-input form-input-3d" required>
+          </div>
+          <div class="form-group">
+            <label for="meetingDate">Date & Time</label>
+            <input type="datetime-local" id="meetingDate" name="datetime" class="form-input form-input-3d" required>
+          </div>
+          <div class="form-group">
+            <label for="meetingDuration">Duration (minutes)</label>
+            <select id="meetingDuration" name="duration" class="select-input form-input-3d">
+              <option value="30">30 minutes</option>
+              <option value="60" selected>1 hour</option>
+              <option value="90">1.5 hours</option>
+              <option value="120">2 hours</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="meetingDescription">Description</label>
+            <textarea id="meetingDescription" name="description" class="form-input form-input-3d" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-3d" onclick="closeModal('scheduleMeetingModal')">Cancel</button>
+        <button type="submit" form="scheduleMeetingForm" class="btn btn-primary btn-3d">Schedule Meeting</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Summary Modal -->
+  <div id="summaryModal" class="modal modal-3d">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>AI-Generated Summary</h3>
+        <button class="modal-close" onclick="closeModal('summaryModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="summary-content" id="summaryContent">
+          <div class="summary-section">
+            <h4>Key Points</h4>
+            <ul id="keyPoints">
+              <!-- Key points will be populated by JavaScript -->
+            </ul>
+          </div>
+          
+          <div class="summary-section">
+            <h4>Action Items</h4>
+            <ul id="actionItemsList">
+              <!-- Action items will be populated by JavaScript -->
+            </ul>
+          </div>
+          
+          <div class="summary-section">
+            <h4>Next Steps</h4>
+            <ul id="nextSteps">
+              <!-- Next steps will be populated by JavaScript -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-3d" onclick="closeModal('summaryModal')">Close</button>
+        <button type="button" class="btn btn-primary btn-3d" id="exportSummary">Export Summary</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Caption Overlay -->
+  <div id="captionOverlay" class="caption-overlay">
+    <div class="caption-content">
+      <div class="caption-text" id="captionText">Live captions will appear here...</div>
+      <div class="caption-controls">
+        <button class="caption-btn" id="closeCaptions">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skip Links for Accessibility -->
+  <div class="skip-links">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#navigation" class="skip-link">Skip to navigation</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/auth.js"></script>
+  <script src="js/transcription.js"></script>
+  <script src="js/translation.js"></script>
+  <script src="js/meetings.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/enhanced-analytics.js"></script>
+  <script src="js/team.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/ai-features.js"></script>
+  <script src="js/websocket.js"></script>
+  <script src="js/offline-manager.js"></script>
+  <script src="js/collaboration.js"></script>
+  <script src="js/export-sharing.js"></script>
+  <script src="js/speaker-diarization.js"></script>
+  <script src="js/custom-vocabulary.js"></script>
+  <script src="js/voice-commands.js"></script>
+  <script src="js/accessibility.js"></script>
+  <script src="js/integrations.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/word-cloud.js"></script>
+  <script src="js/team-management.js"></script>
+  <script src="js/billing.js"></script>
+  <script src="js/api-access.js"></script>
+  <script src="js/summary.js"></script>
+  <script src="js/sw.js"></script>
+  <script src="js/server.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
